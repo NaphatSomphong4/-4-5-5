@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พันธุ์บลูด็อกเเละบูลลี่</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>พันธุ์บลูด็อกเเละบูลลี่</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                <li><a href="models.html">พันธุ์บลูด็อกเเละบูลลี่</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>รายการเเนะนำ</h2>
+
+        <div class="Dog">
+            <img src="https://i.pinimg.com/474x/fd/73/2a/fd732aba6fbd576461dbf3489072b5b2.jpg" alt="อเมริกันบูลลี่">
+            <h3>อเมริกันบูลลี่</h3>
+            <p> มีลักษณะกล้ามเนื้อแข็งแรงและท่าทางที่มั่นคง เหมาะสำหรับครอบครัวที่ต้องการเพื่อนซื่อสัตย์และรักใคร่ พร้อมทั้งสามารถทำหน้าที่เป็นสุนัขเฝ้ายามได้อย่างดีเยี่ยม</p>
+            <a href="javascript:void(0)" class="details-button" onclick="showDetails('อเมริกันบูลลี่สีน้ำตาล เพศหญิง ชื่อ มินนี่ อายุ 4 เดือน ฉีดวัคซีนเล้ว')">ดูรายละเอียด</a>
+        </div>
+
+        <div class="Dog">
+            <img src="https://glurgang.com/wp-content/uploads/2023/05/English-Bulldog-Physical-Characteristics.jpg">
+            <h3>อเมริกันบูลด็อก</h3>
+            <p>มีลักษณะมัดกล้ามที่โดดเด่นและนิสัยที่ซื่อสัตย์ต่อครอบครัว พวกมันมีความฉลาดและพร้อมที่จะปกป้องบ้านหรือเจ้าของ</p>
+            <a href="javascript:void(0)" class="details-button" onclick="showDetails('อเมริกันบูลด็อก เพศชาย ชื่อ รถถัง อายุ 1 ขวบ ฉีดวัคซีนเเล้ว')">ดูรายละเอียด</a>
+        </div>
+
+        <div class="Dog">
+            <img src="https://www.thaipedigree.com/static/articles/763d7fd2dcacbfc153881983d6b745cd1b94785fe64e049f85673227df7b9122.jpeg" alt="Kawasaki Ninja 400">
+            <h3>โอลด์อิงลิชบูลด็อก</h3>
+            <p>เป็นสุนัขที่มีความภักดีและซื่อสัตย์สูง มักจะรักและผูกพันกับเจ้าของ พวกมันเป็นมิตรและมีอารมณ์ที่สงบ</p>
+            <a href="javascript:void(0)" class="details-button" onclick="showDetails('โอลด์อิงลิชบูลด็อก เพศชาย ชื่อ อาคม อายุ 5 ขวบ ฉีดวัคซีนเเล้ว ')">ดูรายละเอียด</a>
+        </div>
+
+        <div class="Dog">
+            <img src="https://gatoro.co/wp-content/uploads/2021/08/9659B84A-EFBC-47AF-BDE1-A3020D795C7D.png" alt="Ducati Panigale V4">
+            <h3>เฟรนช์บูลด็อก</h3>
+            <p>เป็นสุนัขที่มีขนาดกะทัดรัดและมีบุคลิกที่น่ารัก มีความซื่อสัตย์และรักเจ้าของอย่างลึกซึ้ง</p>
+            <a href="javascript:void(0)" class="details-button" onclick="showDetails('เฟรนช์บูลด็อก เพศหญิง ชื่อ รถเเก๊ส อายุ 1 ขวบ ฉีดวัคซีนเเล้ว')">ดูรายละเอียด</a>
+        </div>
+    </section>
+
+    <!-- แสดงรายละเอียดเพิ่มเติม -->
+    <div id="detail-view" class="detail-view" style="display:none;">
+        <div class="detail-content">
+            <h4>รายละเอียดเพิ่มเติม:</h4>
+            <p id="detail-desc"></p>
+            <button onclick="closeDetails()">ปิดรายละเอียด</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 เว็บไซต์สุนัขพันธุ์บลูด็อกเเละบูลลี่</p>
+    </footer>
+
+    <script>
+        function showDetails(description) {
+            document.getElementById('detail-desc').innerText = description; // แสดงข้อความที่ส่งมา
+            document.getElementById('detail-view').style.display = 'flex'; // แสดงส่วนที่มีรายละเอียด
+        }
+
+        function closeDetails() {
+            document.getElementById('detail-view').style.display = 'none'; // ซ่อนรายละเอียด
+        }
+    </script>
+</body>
+
+</html>
